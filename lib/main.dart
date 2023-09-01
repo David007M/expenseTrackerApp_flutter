@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/widgets/expenses.dart';
+// import 'package:flutter/services.dart';
+
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 96, 59, 181),
@@ -11,6 +13,9 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 ); // 'k' here is just a naming convention. Usually for theme related Global Vars.
 
 void main() {
+  // SystemChrome.setPreferredOrientations([
+  //   DeviceOrientation.portraitUp,
+  // ]); This is to lock the screen only for portrait direction.
   runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
