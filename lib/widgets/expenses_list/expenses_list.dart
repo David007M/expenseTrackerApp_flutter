@@ -7,7 +7,7 @@ class ExpensesList extends StatelessWidget {
     super.key,
     required this.expenses,
     required this.onRemoveExpense,
-  });
+  }); // This is required. 
 
   final List<Expense> expenses;
   final void Function(Expense expense) onRemoveExpense;
